@@ -1,0 +1,2 @@
+# msglib
+Generic messaging library
