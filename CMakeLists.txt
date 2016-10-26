@@ -7,6 +7,7 @@ set(LIB_SRCS src/msglib.c)
 
 add_library(messaging SHARED ${LIB_SRCS})
 include_directories(inc)
+target_link_libraries(messaging crc)
 set_target_properties(messaging PROPERTIES PUBLIC_HEADER inc/msglib.h)
 set_target_properties(messaging PROPERTIES SOVERSION "1")
 
